@@ -1,0 +1,169 @@
+@media(max-width: 947px) {
+    .signin {
+        padding: 10px 25px;
+    }
+
+    .bg-image img {
+        height: 75%;
+    }
+}
+
+@media(max-width: 910px) {
+    section h1 {
+        font-size: 3rem;
+    }
+
+    nav ul li a {
+        padding: 6px 15px;
+        font-size: 0.8rem;
+    }
+
+    .signin {
+        padding: 10px 30px;
+    }
+
+    .bg-image {
+        width: 50vw;
+        height: 65vh;
+    }
+
+    .bg-image img {
+        height: 75%;
+    }
+
+    #logo {
+        width: 11vw;
+    }
+}
+
+@media(max-width: 750px) {
+    main {
+        flex-direction: column;
+    }
+
+    section, .bg-image {
+        padding: 20px;
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bg-image img {
+        width: 90%;
+        height: 100%;
+    }
+
+    .header-right {
+        width: 30%;
+    }
+
+    #lupa {
+        width: 32px;
+    }
+
+    .signin {
+        padding: 10px 30px;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    .links {
+        position: absolute;
+        left: 0;
+        top: 6vh;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #36517E;
+        display: none;
+    }
+
+    .links li a {
+        color: white;
+        border-bottom: 2px solid white;
+        font-size: 1rem;
+    }
+
+    .active-menu {
+        display: flex;
+    }
+
+    
+    .remove-bar1 {
+        display: none;
+    }
+
+    .rotate-bar2 {  
+       transform: rotate(31deg) translateY(5px) translateX(2px);
+    }
+
+    .rotate-bar3 {
+        transform: rotate(-31deg) translateY(-5px) translateX(2px);
+    }
+
+    .rotate-bar2, .rotate-bar3 {
+        transition-duration: 0.2s;
+    }
+
+    footer  {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 150vh;
+    }
+
+    .ft-box {
+        width: 100vw;
+        height: 40vh;
+    }   
+}
+
+@media(max-width: 618px) {
+    .header-right {
+        width: 60%;
+    }
+
+    section {
+        width: 90vw;
+    }
+}
+
+@media(max-width: 550px) {
+    .links {
+        width: 90vw;
+    }
+}
+
+@media(max-width: 490px) {
+    section h1 {
+        font-size: 2rem;
+    }
+
+    section span {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 353px) {
+    #startff {
+        padding: 12px 5rem;   
+    }
+
+    .signin {
+        padding: 8px 25px;
+    }
+}

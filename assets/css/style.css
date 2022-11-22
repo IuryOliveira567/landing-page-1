@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+ list-style-type: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+}
+
+header {
+    grid-column: 1 / 13;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+header a {
+    color: #36517E;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+#logo {
+    border-radius: 5px;
+    width: 12vw;
+    height: 7vh;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid #36517E;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+}
+
+.right-pane {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchbar {
+    outline: none;
+    border-radius: 10px;
+    border: none;   
+    height: 5vh;
+    float: right;
+    display: none;
+    color: #36517E;
+    font-size: 1.03rem;
+    text-indent: 8px;
+    background-image: url("../icons/lupa.png");
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 95%;
+    background-size: 25px 25px;
+}
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.searchbar:focus {
+    border: 1px solid #36517E;
+}
+
+#lupa {
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+.activebar {
+    display: flex;
+    animation-name: sbar;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+}
+
+@keyframes sbar {
+    0% {width: 0%}
+    25% {width: 25%}
+    50% {width: 50%}
+    75% {width: 75%}
+    100% {width: 100%}
+}
+
+.hide {
+    display: none;
+}
+
+main {
+    margin-top: 2rem;
+    grid-column: 1 / 13;
+    display: flex;
+}
+
+.signin {
+    padding: 15px 40px;
+    background-color: white;
+    border: 1px solid #36517E;
+    border-radius: 10px;
+    color: #36517E;
+    font-weight: 600;
+}
+
+.signin:hover {
+    background-color: #36517E;
+    color: white;
+}
+
+.signin:hover {
+    opacity: 0.9;
+}
+
+section {
+    width: 50%;
+    padding-left: 5%;
+    padding-top: 2%;
+    height: 80vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section h1, span {
+  color: #36517E;
+}
+
+section h1 {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+section span {
+    font-size: 1.3rem;
+    display: block;
+}
+
+#startff {
+    background-color: #36517E;
+    color: white;
+    border-radius: 2rem;
+    padding: 15px 6rem;
+    font-weight: 700;
+}
+
+#startff:hover {
+    color: #36517E;
+    background-color: white;
+    border: 1px solid #36517E;
+}
+
+.bg-image {
+    width: 50%;
+    padding-top: 1%;
+}
+
+.bg-image img {
+    box-shadow: 4px 4px #36517E;
+    border-radius: 10px;
+}
+
+.mobile-menu {
+    border: 1px solid #36517E;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 3px;
+    margin: 8px;
+    background-color: #36517E;
+    border-radius: 5px;
+}
+
+footer {
+    grid-column: 1 / 13;
+    height: 50vh;
+    background-color: #252F4E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+}
+
+.ft-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+}
+
+.ft-box h2, a {
+    color: white;
+}
+
+.ft-box a {
+    padding: 15px;
+}
