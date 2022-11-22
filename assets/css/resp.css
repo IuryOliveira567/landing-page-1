@@ -44,7 +44,7 @@
     section, .bg-image {
         padding: 20px;
         width: 100vw;
-        height: 50vh;
+        height: 60vh;
         display: flex;
         flex-direction: column;
         align-items: center;
