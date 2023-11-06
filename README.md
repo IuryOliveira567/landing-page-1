@@ -2,7 +2,7 @@
 
 Hi there!
 
-This is my first front end project, a simple landing page for a fictional tech company.
+This is my second front end project, a simple landing page for a fictional tech company.
 
 ### Technologies i used
 
